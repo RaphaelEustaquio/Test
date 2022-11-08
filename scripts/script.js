@@ -12,13 +12,35 @@
 
 // }
 
-let input = "";
-do {
-    input = prompt("What is your name?");
+// let input = "";
+// do {
+//     input = prompt("What is your name?");
 
+// }
+// while(Number.isInteger(Number(input)))
+// while (!isNaN(Number(input)))
+// alert(`Welcome ${input}`)
+
+let fruits = ['Apples', 'Banana']
+
+fruits.push("Orange")
+
+fruits.unshift("Mango")
+
+for (let i = 0; i < fruits.length; i++)
+{
+    console.log(fruits[i]);
 }
-while (!isNaN(Number(input)))
 
-alert("Welcome " + input);
-alert(`Welcome ${input}`)
+for (let item of fruits)
+{
+    console.log(item);
+}
 
+console.log(fruits)
+
+fruits.splice(0, 1)
+
+// fruits.shift()
+
+// fruits.pop()
