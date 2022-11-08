@@ -21,26 +21,41 @@
 // while (!isNaN(Number(input)))
 // alert(`Welcome ${input}`)
 
-let fruits = ['Apples', 'Banana']
+// let fruits = ['Apples', 'Banana']
 
-fruits.push("Orange")
+// fruits.push("Orange")
 
-fruits.unshift("Mango")
+// fruits.unshift("Mango")
 
-for (let i = 0; i < fruits.length; i++)
-{
-    console.log(fruits[i]);
-}
+// for (let i = 0; i < fruits.length; i++)
+// {
+//     console.log(fruits[i]);
+// }
 
-for (let item of fruits)
-{
-    console.log(item);
-}
+// for (let item of fruits)
+// {
+//     console.log(item);
+// }
 
-console.log(fruits)
+// console.log(fruits)
 
-fruits.splice(0, 1)
+// fruits.splice(0, 1)
 
 // fruits.shift()
 
 // fruits.pop()
+
+const person = {
+    name: ['Bob', 'Smith'],
+    age: 32,
+    gender: 'male',
+    interests: ['music', 'skiing']
+}
+
+for (let prop in person)
+{
+    console.log(`My ${prop} is ${person[prop]}`)
+
+} 
+
+// console.log(`My name is ${person.name[0]} ${person.name[1]}. I am interested in ${person.interests[0]} and ${person.interests[1]}.`)
